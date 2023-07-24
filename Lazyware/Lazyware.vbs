@@ -1,3 +1,5 @@
+' VBScript version "will silently run on Windows"
+
 Option Explicit
 
 Dim objFSO, objShell, scriptPath, startupScriptPath
