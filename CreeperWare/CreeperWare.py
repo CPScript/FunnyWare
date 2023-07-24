@@ -22,7 +22,7 @@ def main():
     while True:
         # Check for minecraft (bedrock edition)
         for process in psutil.process_iter(['pid', 'name']):
-            if process.info['name'] == 'Minecraft.exe':
+            if process.info['name'] == 'Minecraft':
                 # Generate a random time between 0 and 5 minutes (300 seconds)
                 time.sleep(300)
                 random_time = random.randint(0, 300)
