@@ -1,1 +1,1 @@
-# a simnple survey :D
+# a simple survey :D
