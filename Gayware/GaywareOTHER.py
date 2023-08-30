@@ -25,8 +25,7 @@ def create_popup():
     
     root.after(100, create_popup)
 
-def disable_window():
-    root.attributes('-disabled', True)
+
 
 root = Tk()
 root.geometry('600x600')
@@ -49,7 +48,5 @@ btnNo = Button(root, text='Yes. I am gay', font='Arial 20 bold', command=no)
 btnNo.place(x=350, y=400)  # Adjusted y-coordinate to avoid overlapping
 
 popups = []
-
-btnNo['command'] = lambda: [disable_window(), threading.Thread(target=create_popup).start()]
 
 root.mainloop()
