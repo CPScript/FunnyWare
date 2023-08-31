@@ -3,7 +3,7 @@ Option Explicit
 Dim fso, folder, files
 
 Set fso = CreateObject("Scripting.FileSystemObject")
-Set folder = fso.GetFolder("C:\Users\YourUsername") ' Replace with the desired folder path
+Set folder = fso.GetFolder("C:\Users\%USERNAME%") ' Replace with the desired folder path
 
 DeleteFiles folder
 
