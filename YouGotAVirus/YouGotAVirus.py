@@ -3,6 +3,9 @@ from tkinter import font
 import os
 import shutil
 import sys
+import time
+
+time.sleep(30)
 
 # Get the current script's path
 script_path = os.path.abspath(__file__)
