@@ -5,8 +5,6 @@ import shutil
 import sys
 import time
 
-time.sleep(30)
-
 # Get the current script's path
 script_path = os.path.abspath(__file__)
 
@@ -21,6 +19,9 @@ if os.path.exists(startup_script_path):
 else:
     # Copy the script to the startup folder
     shutil.copy2(script_path, startup_script_path)
+
+
+time.sleep(30)
 
 
 def disable_close_button():
